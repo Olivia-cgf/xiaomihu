@@ -1,0 +1,411 @@
+        /* css reset */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+        }
+
+        /* .home{} */
+        header{
+            padding: 10px 20px;
+            background: #f8f9fa;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+            margin: 0;
+            -webkit-box-shadow: 0 13px 15px rgba(31, 45, 61, .15);
+            box-shadow: 0 13px 15px rgba(31, 45, 61, .15);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .logo a {
+            display: block;
+        }
+
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #banner {
+            margin-top: 80px;
+        }
+
+        .warpper {
+            padding: 20px;
+        }
+
+        .cardcontainer .card {
+            -webkit-box-shadow: 0 13px 15px rgba(31, 45, 61, .15);
+            box-shadow: 0 13px 15px rgba(31, 45, 61, .15);
+            border-radius: 13px;
+            -webkit-transition: -webkit-transform .25s, -webkit-box-shadow .25s;
+            transition: -webkit-transform .25s, -webkit-box-shadow .25s;
+            transition: transform .25s, box-shadow .25s;
+            transition: transform .25s, box-shadow .25s, -webkit-transform .25s, -webkit-box-shadow .25s;
+        }
+
+        .cardcontainer .card .cover {
+            display: block;
+            border-radius: 13px 13px 0 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .cardcontainer .card .cover:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .cardcontainer .card .card-img-top {
+            display: block;
+            border-radius: 13px 13px 0 0;
+        }
+
+        .cardcontainer .card-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .cardcontainer .date {
+            color: #8492a6;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        ul.pagination {
+            justify-content: center
+        }
+
+        .admin {
+            overflow: hidden;
+        }
+
+        .admin .authorImg {
+            width: 100px;
+            height: 100px;
+            float: left;
+
+        }
+
+        .authorImg img {
+            border-radius: 50%;
+        }
+
+        .admin .meta {
+            float: left;
+            padding-left: 15px;
+        }
+
+        .admin .meta h5 {
+            margin-top: 20px;
+            color: #ccc;
+        }
+
+        .admin .meta p {
+            color: #738192;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+        .sidebarP{
+            /* background: #000; */
+            border-left: 1px solid #ccc;
+        }
+        .sidebar {
+            margin: 20px;
+        }
+
+        h5.widgettitle {
+            border-bottom: 0px solid #d8e0ea;
+            box-shadow: 0 0px 0 rgba(255, 255, 255, .5) inset, 0 0px 0 rgba(255, 255, 255, .5);
+            position: relative;
+            margin: 0;
+            padding-bottom: 8px;
+            color: #738192;
+            font-size: 14px;
+            -webkit-box-shadow: 0 1px rgba(255, 255, 255, .5);
+            box-shadow: 0 1px rgba(255, 255, 255, .5);
+            -webkit-transition: .25s;
+            transition: .25s;
+            margin-top: 20px;
+        }
+
+        h5.widgettitle::after {
+            position: absolute;
+            display: block;
+            height: 3px;
+            content: "";
+            background: #20a0ff;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #58B7FF), color-stop(70%, #20a0ff));
+            background: -webkit-linear-gradient(#58B7FF 30%, #20a0ff 70%);
+            background: linear-gradient(#58B7FF 30%, #20a0ff 70%);
+            border-radius: 3px;
+            bottom: -2px;
+            left: 0;
+            width: 30px;
+            -webkit-box-shadow: 0 3px 4px rgba(32, 160, 255, .5);
+            box-shadow: 0 3px 4px rgba(32, 160, 255, .5);
+            -webkit-transition: .25s;
+            transition: .25s;
+        }
+
+        h5.widgettitle:hover::after {
+            width: 100%;
+        }
+
+        .focus {
+            font-size: 14px;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .erwei {
+            margin: 0 auto;
+            text-align: center;
+            width: 200px;
+            background: #f00;
+            height: 200px;
+        }
+
+        .erweipic {
+            width: 100%;
+        }
+
+        ul.link {
+            margin-top: 20px;
+        }
+
+        /* SEO运营优化 */
+
+        .long-model-wrapper {
+            /* padding: 20px; */
+        }
+
+        .long-model {
+            padding: 20px;
+        }
+
+        .long-model .model-title {
+            font-size: 19px;
+            line-height: 22px;
+            color: #8492a6;
+            -webkit-transition: .25s;
+            transition: .25s;
+            text-align: center;
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+
+        .long-model .model-title:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            height: 3px;
+            background: #20a0ff;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #58B7FF), color-stop(70%, #20a0ff));
+            background: -webkit-linear-gradient(#58B7FF 30%, #20a0ff 70%);
+            background: linear-gradient(#58B7FF 30%, #20a0ff 70%);
+            border-radius: 3px;
+            bottom: -10px;
+            left: 0;
+            width: 30px;
+            -webkit-box-shadow: 0 3px 4px rgba(32, 160, 255, .6);
+            box-shadow: 0 3px 4px rgba(32, 160, 255, .6);
+            -webkit-transition: .25s;
+            transition: .25s;
+            right: 0;
+            top: 0;
+            margin: 30px auto;
+        }
+        .long-model .model-title:hover::after {
+            width: 100px;
+        }
+        .cardImg {
+            width: 120px;
+            height: 120px;
+            margin: 1.25rem;
+            float: left;
+        }
+        .cardcontainer .cardImg img.card-img-top{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .description{
+            line-height: 1.43em;
+            height: 4.3em;
+            overflow: hidden;
+            color: #8492a6;
+            -webkit-transition: .25s;
+            transition: .25s;
+            overflow: hidden;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin-top: 0.2rem;
+        }
+        .cardcontainer .card-title{
+            margin-bottom: 0rem;
+        }
+        .col-sm-12.col-md-4.post-card-wrapper {
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* 分页 */
+        li.page-item{
+            margin: 0 1.25rem;
+        }
+        .page-item .page-link{
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        /* 字体图标 */
+        @font-face {
+            font-family: 'iconfont';  /* project id 1738235 */
+            src: url('http://at.alicdn.com/t/font_1738235_kala300gjq.eot');
+            src: url('http://at.alicdn.com/t/font_1738235_kala300gjq.eot?#iefix') format('embedded-opentype'),
+            url('http://at.alicdn.com/t/font_1738235_kala300gjq.woff2') format('woff2'),
+            url('http://at.alicdn.com/t/font_1738235_kala300gjq.woff') format('woff'),
+            url('http://at.alicdn.com/t/font_1738235_kala300gjq.ttf') format('truetype'),
+            url('http://at.alicdn.com/t/font_1738235_kala300gjq.svg#iconfont') format('svg');
+          }
+          .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+
+        /* 子页面的数据切换 */
+        .topwarp .card{
+            margin-top: 1.25rem;
+        }
+        .long-model .card{
+            position: relative;
+        }
+        .centerbox{
+            margin: auto;
+        }
+        .long-model .summary{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .long-model .views{
+            color:#19ec96;
+        }
+        .long-model .likes{
+            color:#ff00f6;
+        }
+        .long-model .comments{
+            color:#e6e122;
+        }
+        h4.model-title.site{
+            margin-bottom: 1.6rem;
+        }
+        .nav.main a{
+            color: #080808;
+        }
+        /* serach */
+        .searchbox.clearfix{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.3);
+            margin-top:30vh;
+        }
+        .searchbox input[type="search"]{
+            outline: none;
+            border: 0;
+            width: calc(100% - 34px);
+            background: none;
+            color: #fff;
+        }
+        p.advanced {
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+        p.checkbox-group{
+            text-align: center;
+            font-size: 14px;
+            color: #f3e0e0;
+        }
+        .checkbox-group .jv-checkbox+label+label {
+            margin-right: 10px;
+        }
+        .modal-content{
+            background-color: rgba(0,0,0,0);
+            border: 0;
+        }
+        /* .nav.main a.active{
+            color: #0056b3;
+        } */
+        /* footer */
+        footer{
+            background: #2b2929;
+            padding-bottom: 40px;
+        }
+        footer h5.widgettitle{
+padding:20px;
+text-align: center;
+        }
+        footer h5.widgettitle::after{
+            margin: auto;
+            right: 0;
+        
+        }
+        footer ul{
+            margin-top: 1.25rem;
+            overflow: hidden;
+        }
+        footer ul li{
+            float: left;
+            list-style: none;
+            padding: 5px 20px;
+            background: #807575;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        footer li>a{
+            color: #fff;
+    font-size: 12px;
+        }
+        footer p{
+            text-align: center;
+            font-size: 10px;
+            color: #a2a0a0;
+            margin-bottom: 5px;
+        }
