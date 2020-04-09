@@ -15,97 +15,103 @@
 </head>
 
 <body>
-        <header class="">          
-                <nav class="navbar navbar-expand-md bg-light navbar-light">
-                      <!-- Brand/logo -->
-                    <a class="navbar-brand" href="#">
-                        <img src="http://simg.soul88.com/wp-content/uploads/2020/01/soullogopng3.png" alt="logo"
-                            style="width:120px;">
-                    </a>
-    
-                    <!-- Toggler/collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-    
-                    <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav menu-wrap nav main">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./index.html"><span class="icon iconfont">&#xe6ac;</span>首页</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown"><span
-                                        class="icon iconfont">&#xe662;</span>SEO运营</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="./SEOlist.html">Link 1</a>
-                                    <a class="dropdown-item" href="./SEOlist.html">Link 2</a>
-                                    <a class="dropdown-item"  href="./SEOlist.html">Link 3</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"  href="./SEOlist.html"><span class="icon iconfont">&#xe637;</span>软件收藏</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"  href="./SEOlist.html"><span class="icon iconfont">&#xeb8e;</span>web资源</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"  href="./SEOlist.html"><span class="icon iconfont">&#xe627;</span>狩酷乐享</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"  href="./SEOlist.html"><span class="icon iconfont">&#xe639;</span>网站建设</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="">
-                        <!-- <span class="icon iconfont">&#xe7db;</span> -->
-                        <!-- 按钮：用于打开模态框 -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                            <span class="icon iconfont">&#xe625;</span>
-                        </button>
-                    </div>
-    
-        </div>
+    <header class="">
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="http://simg.soul88.com/wp-content/uploads/2020/01/soullogopng3.png" alt="logo"
+                    style="width:120px;">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav menu-wrap nav main">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html"><span class="icon iconfont">&#xe6ac;</span>首页</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"><span
+                                class="icon iconfont">&#xe662;</span>SEO运营</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./SEOlist.html">Link 1</a>
+                            <a class="dropdown-item" href="./SEOlist.html">Link 2</a>
+                            <a class="dropdown-item" href="./SEOlist.html">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./SEOlist.html"><span class="icon iconfont">&#xe637;</span>软件收藏</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./SEOlist.html"><span class="icon iconfont">&#xeb8e;</span>web资源</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./SEOlist.html"><span class="icon iconfont">&#xe627;</span>狩酷乐享</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./SEOlist.html"><span class="icon iconfont">&#xe639;</span>网站建设</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <!-- <span class="icon iconfont">&#xe7db;</span> -->
+                <!-- 按钮：用于打开模态框 -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    <span class="icon iconfont">&#xe625;</span>
+                </button>
+            </div>
+
+            </div>
         </nav>
-        </header>
+    </header>
     <!-- 模态框 -->
     <div class="modal fade" id="myModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-    
-                    <div class="global_search_form">
-                        <div class="searchbox clearfix">
-                            <input type="search" v-model="global_search_query" placeholder="请输入...">
-                            <span class="button" @click="this.global_search()">
-                                <span class="icon iconfont">&#xe625;</span>
-                            </span>
-                        </div>
-                        <p class="advanced">
-                            <span>高级选项 <i class="icon iconfont">&#xe6bd;</i></span>
-                        </p>
-                        <p class="checkbox-group" style="display: none;">
-                            <input type="checkbox" v-model="global_search_post" class="jv-checkbox" label="文章" id="article">
-                            <label for="article"></label>
-                            <label for="article">文章</label>
-                            <input type="checkbox" v-model="global_search_gallery" class="jv-checkbox" label="相册"
-                                id="photo">
-                            <label for="photo"></label><label for="photo">相册</label>
-                            <input type="checkbox" v-model="global_search_prod_title" class="jv-checkbox" label="仅检索标题"
-                                id="title">
-                            <label for="title"></label>
-                            <labelfor="title">仅检索标题</label>
-                        </p>
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="global_search_form">
+                    <div class="searchbox clearfix">
+                        <input type="search" v-model="global_search_query" placeholder="请输入...">
+                        <span class="button" @click="this.global_search()">
+                            <span class="icon iconfont">&#xe625;</span>
+                        </span>
                     </div>
+                    <p class="advanced">
+                        <span>高级选项 <i class="icon iconfont">&#xe6bd;</i></span>
+                    </p>
+                    <p class="checkbox-group" style="display: none;">
+                        <input type="checkbox" v-model="global_search_post" class="jv-checkbox" label="文章" id="article">
+                        <label for="article"></label>
+                        <label for="article">文章</label>
+                        <input type="checkbox" v-model="global_search_gallery" class="jv-checkbox" label="相册"
+                            id="photo">
+                        <label for="photo"></label><label for="photo">相册</label>
+                        <input type="checkbox" v-model="global_search_prod_title" class="jv-checkbox" label="仅检索标题"
+                            id="title">
+                        <label for="title"></label>
+                        <labelfor="title">仅检索标题</label>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
     <!-- banner -->
-
-    <div id="banner" class="carousel slide" data-ride="carousel">
-            <div style="margin: 0 auto;">
-                    <canvas id="myCanvas4"></canvas>
-            </div>
+    <div class="banner">
+        <div style="margin: 0 auto;" class="canvas">
+            <canvas id="myCanvas4"></canvas>
+        </div>
+        <div class="bannerImg">
+            <img src="https://t8.baidu.com/it/u=2247852322,986532796&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1587039226&t=d91c72492512e07ec8ad38bfda4a2044" alt="">
+        </div>
+        <div class="bannerText">
+            <h2>辩题文字</h2>
+            <p>辩题文字辩题文字辩题文字辩题文字辩题文字</p>
+        </div>
     </div>
     <!-- 页面导航 -->
     <div class="col-md-9 col-lg-9_5">
@@ -117,67 +123,71 @@
         <div class="detailBox col-md-9 col-lg-9_5">
             <!-- pageFoot -->
             <div class="pageFoot">
-                    <span class="icon iconfont">&#xe735;</span><span>狩酷 · 3月14日 · 2020年</span>
-                    <span class="icon iconfont">&#xe714;</span><span>Memcached教程</span>
-                    <span class="icon iconfont">&#xe8c3;</span><span>194已阅</span>
+                <span class="icon iconfont">&#xe735;</span><span>狩酷 · 3月14日 · 2020年</span>
+                <span class="icon iconfont">&#xe714;</span><span>Memcached教程</span>
+                <span class="icon iconfont">&#xe8c3;</span><span>194已阅</span>
             </div>
             <div class="pageBox">
-                    <h2 id="h2-0">前言简介0</h2>
-                    <article class="content">
-                            Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
-        
-                            Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
-                            
-                            本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
-                    </article>
-                    <h2 id="h2-1">前言简介1</h2>
-                    <article class="content">
-                            Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
-        
-                            Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
-                            
-                            本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
-                    </article>
-                    <h2 id="h2-2">前言简介2</h2>
-                    <article class="content">
-                            Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
-        
-                            Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
-                            
-                            本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
-                    </article>
-                    <h2 id="h2-3">前言简介3</h2>
-                    <article class="content">
-                            Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
-        
-                            Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
-                            
-                            本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
-                    </article>
+                <h2 id="h2-0">前言简介0</h2>
+                <article class="content">
+                    Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad
+                    Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
+
+                    Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
+
+                    本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
+                </article>
+                <h2 id="h2-1">前言简介1</h2>
+                <article class="content">
+                    Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad
+                    Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
+
+                    Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
+
+                    本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
+                </article>
+                <h2 id="h2-2">前言简介2</h2>
+                <article class="content">
+                    Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad
+                    Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
+
+                    Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
+
+                    本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
+                </article>
+                <h2 id="h2-3">前言简介3</h2>
+                <article class="content">
+                    Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。Memcached是以LiveJournal旗下Danga Interactive公司的Brad
+                    Fitzpatric为首开发的一款软件。现在已成为mixi、hatena、Facebook、Vox、LiveJournal等众多服务中提高Web应用扩展性的重要因素。
+
+                    Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发难度，解决了大数据量缓存的很多问题。它的API兼容大部分流行的开发语言。
+
+                    本质上，它是一个简洁的key-value存储系统。一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性
+                </article>
             </div>
         </div>
         <!-- 侧栏 -->
         <div class="col-md-3 col-lg-2_5 hidden-xs hidden-sm sidebarP">
             <div class="sidebar">
-               <div class="contentnav">
-                   <h5 class="widgettitle">文章目录</h5>
-                   <ul class="navbar-nav">
-                       <li class="nav-item active">
+                <div class="contentnav">
+                    <h5 class="widgettitle">文章目录</h5>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
                             <a href="#h2-0" class="nav-link" title="前言简介">前言简介0</a>
-                       </li>
-                       <li class="nav-item active">
+                        </li>
+                        <li class="nav-item active">
                             <a href="#h2-1" class="nav-link" title="前言简介">前言简介1</a>
-                       </li>
-                       <li class="nav-item active">
+                        </li>
+                        <li class="nav-item active">
                             <a href="#h2-2" class="nav-link" title="前言简介">前言简介2Linux libevent库安装Linux libevent库安装</a>
-                       </li>
-                       <li class="nav-item active">
+                        </li>
+                        <li class="nav-item active">
                             <a href="#h2-3" class="nav-link" title="前言简介">前言简介3</a>
-                       </li>
-                   </ul>
-               </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-           
+
         </div>
     </div>
 
@@ -187,91 +197,92 @@
 
 <script src="../js/index.js"></script>
 <script>
-    
- let c = document.getElementById("myCanvas4");
-    let context = c.getContext("2d");
+    resizeCanvas();
+    $(window).resize(resizeCanvas);
 
-    let width = document.documentElement.clientWidth; //画布宽度
-    
-    $("canvas").width(width);
-    $("canvas").height(400);
-    let height = 400; //画布高度
-    let gap = 40;
-    let num = width / gap;
-    console.log(num);
-    let points = [];
+    function resizeCanvas() {
+        let c = document.getElementById("myCanvas4");
+        let context = c.getContext("2d");
 
-    for (let i = 0; i < num; i++) {
-        let r, y;
-        r = i % 4 == 0 ? 10 : (i % 4) * 5;
-        y = i % 4 == 0 ? 300 : 200 + ((i % 4) * 20);
-        let json1 = {
-            x: i * gap,
-            y: y,
-            r: r
+        let width = document.documentElement.clientWidth; //画布宽度
+        let height = 300; //画布高度
+        let gap = 40;
+        let num = width / gap;
+        let points = [];
+
+        $("canvas").attr("width", width);
+        $("canvas").attr("height", height);
+        for (let i = 0; i < num; i++) {
+            let r, y;
+            r = i % 4 == 0 ? 10 : (i % 4) * 5;
+            y = i % 4 == 0 ? 300 : 200 + ((i % 4) * 20);
+            let json1 = {
+                x: i * gap,
+                y: y,
+                r: r
+            }
+            r = i % 4 == 0 ? 10 : (i % 4) * 5;
+            y = i % 4 == 0 ? 100 : 100 + ((i % 4) * 20);
+            let json2 = {
+                x: i * gap,
+                y: y,
+                r: r
+            }
+            r = i % 4 == 0 ? 5 : (i % 4) * 5;
+            y = i % 4 == 0 ? 100 : 100 + ((i % 4) * 20);
+            let json3 = {
+                x: i * gap,
+                y: y,
+                r: r
+            }
+
+            points.push(json1, json2, json3);
+
         }
-        r = i % 4 == 0 ? 10 : (i % 4) * 5;
-        y = i % 4 == 0 ? 100 : 100 + ((i % 4) * 20);
-        let json2 = {
-            x: i * gap,
-            y: y,
-            r: r
-        }
-        r = i % 4 == 0 ? 5 : (i % 4) * 5;
-        y = i % 4 == 0 ? 100 : 100 + ((i % 4) * 20);
-        let json3 = {
-            x: i * gap,
-            y: y,
-            r: r
-        }
-
-        points.push(json1, json2, json3);
-
-    }
 
 
-    console.log(points);
+        function drawCircle() {
 
-    function drawCircle() {
+            for (var i in points) {
+                context.beginPath();
 
-        for (var i in points) {
-            context.beginPath();
+                context.arc(points[i].x, points[i].y, points[i].r, 0, Math.PI * 2);
 
-            context.arc(points[i].x, points[i].y, points[i].r, 0, Math.PI * 2);
+                context.fillStyle = "rgba(255,255,255,0.3)";
+                context.fill();
+                context.closePath();
 
-            context.fillStyle = "rgba(255,255,255,0.3)";
-            context.fill();
-            context.closePath();
+                if (points[i].y < 0) {
+                    points[i].y = height;
 
-            if (points[i].y < 0) {
-                points[i].y = height;
+                } else {
+                    i % 5 == 0 ? (points[i].y -= 1.5) : (points[i].y -= 0.5 * (i % 5));
+                }
 
-            } else {
-                i % 5 == 0 ? (points[i].y -= 2.5) : (points[i].y -= 1.5 * (i % 5));
             }
 
         }
-
-    }
-    // drawCircle()
-    function render() {
-        //默认值为source-over
-        let prev = context.globalCompositeOperation;
-        //只显示canvas上原图像的重叠部分
-        context.globalCompositeOperation = 'destination-in';
-        //设置主canvas的绘制透明度
-        context.globalAlpha = 0.9;
-        //这一步目的是将canvas上的图像变的透明
-        context.fillRect(0, 0, width, height);
-        //在原图像上重叠新图像
-        context.globalCompositeOperation = prev;
-        //在主canvas上画新圆
-        drawCircle();
-        if (width !== 0) {
-            //在动画没有结束前，递归渲染
-            window.requestAnimationFrame(render);
+        // drawCircle()
+        function render() {
+            //默认值为source-over
+            let prev = context.globalCompositeOperation;
+            //只显示canvas上原图像的重叠部分
+            context.globalCompositeOperation = 'destination-in';
+            //设置主canvas的绘制透明度
+            context.globalAlpha = 0.9;
+            //这一步目的是将canvas上的图像变的透明
+            context.fillRect(0, 0, width, height);
+            //在原图像上重叠新图像
+            context.globalCompositeOperation = prev;
+            //在主canvas上画新圆
+            drawCircle();
+            if (width !== 0) {
+                //在动画没有结束前，递归渲染
+                window.requestAnimationFrame(render);
+            }
         }
+        window.requestAnimationFrame(render);
     }
-    window.requestAnimationFrame(render);
 </script>
+
 </html>
